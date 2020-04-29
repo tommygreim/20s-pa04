@@ -1,0 +1,3 @@
+G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/cmake-build-debug/CMakeFiles/P04.dir
+G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/cmake-build-debug/CMakeFiles/rebuild_cache.dir

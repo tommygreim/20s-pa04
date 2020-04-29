@@ -1,0 +1,4 @@
+"G:\Programs\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" G:\Documents\College\Sophmore\Algorithms\20s-pa04-tommygreim
+-- Configuring done
+-- Generating done
+-- Build files have been written to: G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/cmake-build-debug

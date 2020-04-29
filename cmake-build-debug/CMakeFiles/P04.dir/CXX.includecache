@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/main.cpp
+iostream
+-
+trivialSelect.h
+G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/trivialSelect.h
+vector
+-
+
+G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/trivialSelect.h
+iterator
+-
+algorithm
+-
+vector
+-
+
