@@ -21,7 +21,7 @@ template <typename T>
 typename T::iterator trivialSelect<T>::selectNthSmallest(T inList, unsigned int n){
     std::sort(inList.begin(), inList.end());
     auto nthElem = inList.begin();
-    while(n > 1){
+    while(n > 0){
         nthElem++;
         n--;
     }

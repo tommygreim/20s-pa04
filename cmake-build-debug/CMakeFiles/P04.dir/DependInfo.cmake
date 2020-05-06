@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/main.cpp" "G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/cmake-build-debug/CMakeFiles/P04.dir/main.cpp.obj"
+  "G:/Documents/College/Sophmore/Algorithms/20s-pa04/main.cpp" "G:/Documents/College/Sophmore/Algorithms/20s-pa04/cmake-build-debug/CMakeFiles/P04.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

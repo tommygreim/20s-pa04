@@ -6,15 +6,29 @@
 
 #IncludeRegexTransform: 
 
-G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/main.cpp
+G:/Documents/College/Sophmore/Algorithms/20s-pa04/main.cpp
 iostream
 -
 trivialSelect.h
-G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/trivialSelect.h
+G:/Documents/College/Sophmore/Algorithms/20s-pa04/trivialSelect.h
+quickSelect.h
+G:/Documents/College/Sophmore/Algorithms/20s-pa04/quickSelect.h
+vector
+-
+chrono
+-
+random
+-
+
+G:/Documents/College/Sophmore/Algorithms/20s-pa04/quickSelect.h
+iterator
+-
+algorithm
+-
 vector
 -
 
-G:/Documents/College/Sophmore/Algorithms/20s-pa04-tommygreim/trivialSelect.h
+G:/Documents/College/Sophmore/Algorithms/20s-pa04/trivialSelect.h
 iterator
 -
 algorithm
