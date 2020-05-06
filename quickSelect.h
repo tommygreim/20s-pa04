@@ -13,7 +13,6 @@ template <typename T>
 class quickSelect {
 private:
     quickSelect();
-    unsigned int  partition(T& theList, unsigned int startIndex, unsigned int endIndex, unsigned int pivot);
     static typename T::iterator selectNthSmallest(T& theList, unsigned int startIndex, unsigned int endIndex, unsigned int n);
 public:
     static typename T::iterator selectNthSmallest(T& theList, unsigned int n);
@@ -27,49 +26,48 @@ typename T::iterator quickSelect<T>::selectNthSmallest(T& theList, unsigned int 
 
 template<typename T>
 typename T::iterator quickSelect<T>::selectNthSmallest(T& theList, unsigned int startIndex, unsigned int endIndex, unsigned int n) {
-//    if(startIndex >= endIndex){
-//        return theList.begin() + startIndex;
-//    }
+    if(startIndex == endIndex){
+        return theList.begin() + startIndex;
+    }
 
     unsigned int oldStartIndex = startIndex;
     unsigned int oldEndIndex = endIndex;
 
-    typename T::iterator pivot;
+    //typename T::iterator pivot;
 
     unsigned int pivotIndex = (startIndex + endIndex) / 2;
 
-    pivot = theList.begin() + pivotIndex;
+    auto pivot = *(theList.begin() + pivotIndex);
 
     while(startIndex <= endIndex){
-        while(*(theList.begin() + startIndex) < *pivot){
+        while(*(theList.begin() + startIndex) < pivot){
             startIndex++;
         }
-        while(*(theList.begin() + endIndex) > *pivot){
+        while(*(theList.begin() + endIndex) > pivot){
             endIndex--;
         }
-        if(startIndex <= endIndex){
-            std::iter_swap((theList.begin() + startIndex), (theList.begin() + endIndex));
-            startIndex++;
-            endIndex--;
+        if(startIndex >= endIndex){
+            break;
+//            std::iter_swap((theList.begin() + startIndex), (theList.begin() + endIndex));
+//            startIndex++;
+//            endIndex--;
         }
+        std::swap(*(theList.begin() + startIndex), *(theList.begin() + endIndex));
     }
 
-    if(n == startIndex){
-        return theList.begin() + startIndex - 1;
+    pivotIndex = endIndex;
+
+    if(n == pivotIndex){
+        return theList.begin() + pivotIndex;
     }
-    else if (n < startIndex){
-        return selectNthSmallest(theList, oldStartIndex, startIndex - 1, n);
+    else if (n < pivotIndex){
+        return selectNthSmallest(theList, oldStartIndex, pivotIndex - 1, n);
     }
     else{
-        return selectNthSmallest(theList, startIndex + 1, oldEndIndex, n);
+        return selectNthSmallest(theList, pivotIndex + 1, oldEndIndex, n);
     }
 //    unsigned int pivot = (startIndex + endIndex) / 2;
 //    pivot = partition(theList, startIndex, endIndex, pivot);
-}
-
-template<typename T>
-unsigned int quickSelect<T>::partition(T& theList, unsigned int startIndex, unsigned int endIndex, unsigned int pivot) {
-
 }
 
 #endif //INC_20S_PA04_TOMMYGREIM_QUICKSELECT_H
