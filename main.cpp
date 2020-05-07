@@ -10,7 +10,7 @@
 int main(int argc, char** argv) {
     //Assigns the number of elements per test case
     const int NUM_ELEMENTS = 10000;
-    std::default_random_engine rng(1000);
+    std::default_random_engine rng;
 
     //If the program is run with the 'random' argument, then the numbers will be randomly generated.
     if((argc == 2) && (strcmp(argv[1], "random") == 0)){
