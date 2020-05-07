@@ -19,13 +19,10 @@ public:
 
 template <typename T>
 typename T::iterator trivialSelect<T>::selectNthSmallest(T inList, unsigned int n){
+    //Sort the List
     std::sort(inList.begin(), inList.end());
-    auto nthElem = inList.begin();
-    while(n > 0){
-        nthElem++;
-        n--;
-    }
-    return nthElem;
+    //Get the nth element from the list
+    return inList.begin() + n;
 }
 
 #endif //INC_20S_PA04_TOMMYGREIM_TRIVIALSELECT_H

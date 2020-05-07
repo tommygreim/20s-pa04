@@ -1,0 +1,25 @@
+Number of Elements	Select Type	Time to Select (s)
+10000	Trivial	0.002999
+10000	Quickselect	0
+10000	Trivial	0.003
+10000	Quickselect	0.001001
+10000	Trivial	0.002001
+10000	Quickselect	0.001
+100000	Trivial	0.033008
+100000	Quickselect	0.007002
+100000	Trivial	0.032018
+100000	Quickselect	0.008011
+100000	Trivial	0.061006
+100000	Quickselect	0.090021
+1000000	Trivial	0.387097
+1000000	Quickselect	0.175041
+1000000	Trivial	0.385097
+1000000	Quickselect	0.083019
+1000000	Trivial	0.389088
+1000000	Quickselect	0.067015
+10000000	Trivial	4.51803
+10000000	Quickselect	0.555876
+10000000	Trivial	4.45385
+10000000	Quickselect	0.595144
+10000000	Trivial	4.46013
+10000000	Quickselect	0.990165

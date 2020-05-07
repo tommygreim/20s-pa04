@@ -48,9 +48,6 @@ typename T::iterator quickSelect<T>::selectNthSmallest(T& theList, unsigned int 
         }
         if(startIndex >= endIndex){
             break;
-//            std::iter_swap((theList.begin() + startIndex), (theList.begin() + endIndex));
-//            startIndex++;
-//            endIndex--;
         }
         std::swap(*(theList.begin() + startIndex), *(theList.begin() + endIndex));
     }
