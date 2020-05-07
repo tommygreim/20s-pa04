@@ -5,19 +5,29 @@
 #include <chrono>
 #include <random>
 #include <fstream>
+#include <string.h>
 
-int main() {
+int main(int argc, char** argv) {
     //Assigns the number of elements per test case
     const int NUM_ELEMENTS = 10000;
-    //Set seed ensures the same numbers are generated every time
     std::default_random_engine rng(1000);
+
+    //If the program is run with the 'random' argument, then the numbers will be randomly generated.
+    if((argc == 2) && (strcmp(argv[1], "random") == 0)){
+        unsigned int seed = std::chrono::steady_clock::now().time_since_epoch().count();
+        rng.seed(seed);
+    }
+    else{
+        //Set seed ensures the same numbers are generated every time
+        rng.seed(1000);
+    }
     std::uniform_int_distribution<int> dist(0, NUM_ELEMENTS);
 
     std::ofstream output("output.txt");
 
     output << "Number of Elements\tSelect Type\tTime to Select (s)" << std::endl;
 
-    for(int i = NUM_ELEMENTS; i < 10000 * NUM_ELEMENTS; i *= 10) {
+    for(int i = NUM_ELEMENTS; i < 1000 * NUM_ELEMENTS; i *= 2) {
 
         std::vector<int> testCase1(i);// = {5,4,2343,351,126};
         //Inserts every number from 1 to i into the vector

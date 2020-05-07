@@ -63,8 +63,6 @@ typename T::iterator quickSelect<T>::selectNthSmallest(T& theList, unsigned int 
     else{
         return selectNthSmallest(theList, pivotIndex + 1, oldEndIndex, n);
     }
-//    unsigned int pivot = (startIndex + endIndex) / 2;
-//    pivot = partition(theList, startIndex, endIndex, pivot);
 }
 
 #endif //INC_20S_PA04_TOMMYGREIM_QUICKSELECT_H
